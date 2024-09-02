@@ -6,7 +6,7 @@
 /*   By: gabastos <gabastos@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/27 15:28:24 by gabastos          #+#    #+#             */
-/*   Updated: 2024/08/27 16:33:53 by gabastos         ###   ########.fr       */
+/*   Updated: 2024/08/29 10:48:51 by gabastos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,23 +19,15 @@ int	ft_strncmp(char *s1, char *s2, unsigned int n)
 	count = 0;
 	while (count < n && s1[count] && s2[count])
 	{
-		if (s1[count] > s2[count])
+		if (s1[count] != s2[count])
 		{
-			return (1);
-		}
-		else if (s1[count] < s2[count])
-		{
-			return (-1);
+			return (s1[count] - s2[count]);
 		}
 		count++;
 	}
-	if (s1[count] == '\0' && s2[count] != '\0')
+	if (count < n)
 	{
-		return (-1);
-	}
-	else if (s1[count] != '\0' && s2[count] == '\0')
-	{
-		return (1);
+		return (s1[count] - s2[count]);
 	}
 	return (0);
 }

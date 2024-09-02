@@ -6,7 +6,7 @@
 /*   By: gabastos <gabastos@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/28 08:29:02 by gabastos          #+#    #+#             */
-/*   Updated: 2024/08/28 11:34:19 by gabastos         ###   ########.fr       */
+/*   Updated: 2024/08/29 11:11:22 by gabastos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,13 +36,12 @@ char	*ft_strstr(char *str, char *to_find)
 		}
 		str++;
 	}
-
 	return (NULL);
 }
 
 // int main() {
 // 	char *source = "Hello, world!";
-// 	char *search = "lw";   
+// 	char *search = "";   
 //     char *result = ft_strstr(source, search);
 //     if (result) {
 //         printf("Achou '%s' na posição %ld\n", search, result - source);

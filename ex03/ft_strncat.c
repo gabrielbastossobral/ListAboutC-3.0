@@ -6,7 +6,7 @@
 /*   By: gabastos <gabastos@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/27 17:58:30 by gabastos          #+#    #+#             */
-/*   Updated: 2024/08/27 18:16:09 by gabastos         ###   ########.fr       */
+/*   Updated: 2024/08/29 10:54:03 by gabastos         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,8 +39,7 @@ char	*ft_strncat(char *dest, char *src, unsigned int nb)
 // {
 // 	char dest[50] = "Olá, ";
 //     char *src = "mundo!";
-// 	unsigned 	i = 10;
-
+// 	unsigned 	i = 2;
 // 	ft_strncat(dest, src, i);
 // 	printf("%s", dest);
 // 	return 0;
